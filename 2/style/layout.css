@@ -1,0 +1,58 @@
+.d-grid{
+    display: grid;
+}
+.d-inl-grid{
+    display: inline-grid;
+}
+.three-fixed-px-columns{
+    grid-template-columns: 200px 100px 100px;
+}
+.six-fixed-px-columns{
+    grid-template-columns: 50px 50px 50px 50px 100px 100px;
+}
+.two-fixed-em-columns{
+    grid-template-columns: 10em 100px;
+}
+.six-fixed-rem-columns{
+    grid-template-columns: 3rem 4rem 5rem 2rem 1rem 1rem;
+}
+/*
+html{
+    font-size: 14px;
+}*/
+.five-vmin-vmax-columns{
+    grid-template-columns: 5vmin 5vmin 20vmax 5vmin 5vmin;
+}
+.four-vw-columns{
+    grid-template-columns: 5vw 10vw 5vw 10vw;
+}
+.two-mixed-columns{
+    grid-template-columns: 50px 100%;
+}
+.auto-colums{
+    grid-template-columns: 50px auto ;
+}
+.fr-columns{
+    grid-template-columns: 1fr 1fr;
+}
+.first-grid{
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 100px auto 150px;
+}
+.gap-grid{
+    grid-template-columns: auto auto auto;
+    grid-template-rows:  auto auto;
+    grid-gap: 20px 50px;
+    grid-column-gap: 50px;
+    grid-row-gap: 20px;
+}
+.hw-proc{
+    grid-template-columns: 33.33% 33.33% 33.33%;
+
+}
+.hw-2{
+    grid-template-rows: 50px 1fr 50px;
+}
+.hw-3{
+    grid-template-columns: auto auto auto;
+}
