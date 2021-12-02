@@ -1,0 +1,77 @@
+.d-grid{
+    display: grid;
+}
+.template-grid{
+/*    grid-template-columns: repeat(2,1fr 2fr);
+    grid-template-rows: repeat(3,100px);*/
+    grid-template: [row-start]repeat(3,100px)[row-end]/[column-start]repeat(2,1fr 2fr)[column-end];
+}
+.template-grid div:nth-child(1){
+    grid-column: column-start/ column-end;
+}
+.grid-areas{
+    grid-template: repeat(3,100px)/1fr 2fr;
+    grid-template-areas:
+    "header header"
+    "content content"
+    "left-side right-side"
+    "article article"
+    "footer footer";
+}
+.grid-areas div:nth-child(1){
+    grid-area: header;
+}
+.grid-areas div:nth-child(2){
+    grid-area: content;
+}
+.grid-areas div:nth-child(3){
+    grid-area: left-side;
+}
+.grid-areas div:nth-child(4){
+    grid-area: right-side;
+}
+.grid-areas div:nth-child(5){
+    grid-area: article;
+}
+.grid-areas div:nth-child(6){
+    grid-area: footer;
+}
+.grid-more{
+    grid-template: 100px 100px/1fr 1fr;
+    grid-template-areas:
+    "logo header"
+    "logo main"
+    "footer footer";
+}
+.grid-more div:nth-child(1){
+    grid-area: logo;
+}
+.grid-more div:nth-child(2){
+    grid-area: header;
+}
+.grid-more div:nth-child(3){
+    grid-area: main;
+}
+.grid-more div:nth-child(4){
+    grid-area: footer;
+}
+.grid-justify{
+    grid-template: 1fr 1fr/1fr 1fr;
+    justify-items: center;
+}
+.grid-align{
+    grid-template: 100px 100px/100px 100px;
+    align-items: start;
+}
+.grid-hw{
+    grid-template-areas:
+    "header header"
+    "logo-block menu"
+    "content content"
+    "footer footer";
+    justify-items: start;
+}
+.grid-hw div:nth-child(3){
+    grid-column: 2;
+    grid-row: 2;
+}
