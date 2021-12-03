@@ -59,7 +59,7 @@
     color: black;
 }
 .hw-2{
-    grid-template: 150px 150px/ 150px 150px;
+    grid-template: 150px 150px/ min-content 150px;
     place-content: space-around;
     place-self: center;
 }
