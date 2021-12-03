@@ -1,0 +1,74 @@
+.d-grid{
+    display: grid;
+}
+.align-self-item{
+    grid-template: repeat(3, 100px)/1fr 1fr;
+    align-items: start;
+    justify-items: center;
+}
+.align-self-item div:nth-child(even){
+    align-self: stretch;
+    justify-self: stretch;
+}
+.align-self-item div:nth-child(even){
+    align-self: stretch;
+    justify-self: stretch;
+}
+.align-self-item div:nth-child(1){
+    align-self: start;
+    justify-self: start;
+}
+.align-self-item div:nth-child(3){
+    align-self: end;
+    justify-self: end;
+}
+.align-self-item div:nth-child(5){
+    align-self: center;
+    justify-self: start;
+}
+.place-item{
+    grid-template: 150px 150px 150px/1fr 1fr;
+/*    align-items: center;
+    justify-items: start;*/
+    place-items: center start;
+}
+.place-content-grid{
+    height: 400px;
+    grid-template: 100px 100px 100px/100px 100px;
+/*    align-content: space-between;
+    justify-content: space-between;*/
+    place-content: space-between end;
+}
+.place-self{
+    grid-template: 100px 100px /100px 100px;
+    place-content: space-between space-between;
+    place-items: center;
+}
+.place-self div:nth-child(even){
+    place-self: stretch center;
+}
+.grid-min-max{
+    grid-template-columns: repeat(1,min-content max-content 1fr);
+}
+.hw-1{
+    grid-template: 150px 150px/150px 150px 150px;
+    place-self: start;
+}
+.hw-1 div:nth-child(even){
+    align-self:center;
+    color: black;
+}
+.hw-2{
+    grid-template: 150px 150px/ 150px 150px;
+    place-content: space-around;
+    place-self: center;
+}
+.hw-4{
+    grid-template: 150px 150px/150px 150px 150px;
+}
+.hw-4 div:nth-child(1){
+    align-self:start;
+}
+.hw-4 div:nth-child(6){
+    align-self: end;
+}
