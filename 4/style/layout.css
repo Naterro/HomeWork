@@ -63,6 +63,12 @@
     grid-template: 100px 100px/100px 100px;
     align-items: start;
 }
+.grid-dp{
+    grid-template-areas:
+    "header header header";
+    "right-side main left-side";
+    "footer footer foooter"
+}
 .grid-hw{
     grid-template-areas:
     "header header"
