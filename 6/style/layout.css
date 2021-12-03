@@ -1,0 +1,119 @@
+.d-grid{
+    display: grid;
+}
+.order-grid{
+    grid-template: repeat(3, 100px)/1fr 1fr;
+}
+/*
+.order-grid div:nth-child(1){
+    order: 1;
+}
+.order-grid div:nth-child(6){
+    order: -1;
+}*/
+.order-grid div:nth-child(1){
+    order: 2;
+
+}
+.order-grid div:nth-child(2){
+    order: 1;
+}
+.order-grid div:nth-child(3){
+    order: 0;
+}
+.order-grid div:nth-child(4){
+    order: -1;
+}
+.order-grid div:nth-child(5){
+    order: -2;
+}
+.order-grid div:nth-child(6){
+    order: -3;
+}
+.order-grid div:nth-child(6){
+    order: -3;
+    grid-column: 1/span 2;
+}
+.pos-grid{
+    grid-template: repeat(2,auto)/repeat(2, auto);
+    position: relative;
+}
+.pos-grid div:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.pos-relative-grid{
+    position: relative;
+    grid-template: repeat(2, 1fr 1fr)/1fr 300px;
+}
+.pos-relative-grid div:nth-child(2){
+    position: relative;
+    top:200%;
+    z-index: -1;
+    grid-column: 1/2;
+}
+.pos-fixed-grid{
+    grid-template: auto auto/1fr 1fr;
+}
+.pos-fixed-grid div:nth-child(1){
+    position: fixed;
+}
+.grid-container{
+    height: 100vh;
+    display: grid;
+    grid-template: 90px 1fr 90px/1fr;
+    grid:
+    "header"
+    "main"
+    "footer";
+
+}
+header{
+    grid-area: header;
+    position: sticky;
+    top: 0;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+    position: sticky;
+    bottom: 0;
+}
+.dp{
+    grid-template: 100px 100px 100px/100px 100px 100px;
+    place-content: space-around;
+    position: relative;
+
+}
+.dp div:nth-child(1){
+    position: absolute;
+    grid-column: 2/3;
+    grid-row: 2/3;
+
+}
+.hw-1{
+    grid-template: repeat(3,1fr)/repeat(3,1fr);
+    place-content: space-around;
+    position: relative;
+    opacity: 50%;
+
+}
+.hw-1 div:nth-child(1){
+    position: absolute;
+
+    opacity: 50%;
+    grid-column: 1/2;
+}
+
+.hw-2{
+    grid-template: repeat(3,1fr)/repeat(3,1fr);
+}
+.hw-2 div:nth-child(9){
+    order: -1;
+}
