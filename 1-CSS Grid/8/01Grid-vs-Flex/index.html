@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="layout.css">
+</head>
+<body>
+    <div class="container">
+        <h3>
+            Default size in flex container
+        </h3>
+        <div class="d-flex block">
+            <div class="item">
+                Flex item
+            </div>
+            <!-- <div class="item">
+                Flex item
+            </div>
+            <div class="item">
+                Flex item
+            </div>
+            <div class="item">
+                Flex item
+            </div> -->
+        </div>
+        <h3>
+            Default size in grid container
+        </h3>
+        <div class="d-grid block">
+            <div class="item">
+                Grid item
+            </div>
+            <!-- <div class="item">
+                Grid item
+            </div>
+            <div class="item">
+                Grid item
+            </div> -->
+        </div>
+        <h3>
+            Reverse block
+        </h3>
+        <div class="d-flex block reverse-row">
+            <div class="item">
+                Flex item 1
+            </div>
+            <div class="item">
+                Flex item 2
+            </div>
+            <div class="item">
+                Flex item 3
+            </div>
+        </div>
+        <h3>
+            new elements in Flex
+        </h3>
+        <div class="d-flex player">
+            <button class="btn star"></button>
+            <!-- <button class="btn fix"></button> -->
+            <div class="progress"></div>
+            <!-- <button class="btn video"></button> -->
+            <button class="btn like"></button>
+        </div>
+        <h3>
+            new elements in Grid
+        </h3>
+        <div class="d-grid player-grid">
+            <button class="btn star"></button>
+            <!-- <button class="btn fix"></button> -->
+            <div class="progress"></div>
+            <!-- <button class="btn video"></button> -->
+            <button class="btn like"></button>
+        </div>
+        <h3>
+            Wrap elements flex
+        </h3>
+        <div class="d-flex block wrap-flex">
+            <div class="item">
+                Flex item 1
+            </div>
+            <div class="item">
+                Flex item 2
+            </div>
+            <div class="item">
+                Flex item 3
+            </div>
+        </div>
+        <h3>
+            Wrap elements grid
+        </h3>
+        <div class="d-grid block wrap-grid">
+            <div class="item">
+                Grid item 1
+            </div>
+            <div class="item">
+                Grid item 2
+            </div>
+            <div class="item">
+                Grid item 3
+            </div>
+        </div>
+    </div>
+</body>
+</html>
