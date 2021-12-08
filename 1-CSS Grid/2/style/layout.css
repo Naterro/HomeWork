@@ -18,7 +18,7 @@
 }
 /*
 html{
-    font-size: 14px;
+    fonts-size: 14px;
 }*/
 .five-vmin-vmax-columns{
     grid-template-columns: 5vmin 5vmin 20vmax 5vmin 5vmin;
