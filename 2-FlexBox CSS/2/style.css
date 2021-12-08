@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+.container{
+    max-width: 1195px;
+    margin: 0 auto;
+    /* border: 1px solid #000; */
+}
+
+header{
+    background: #6e78b7;
+    padding: 55px 0;
+}
+
+header .menu{
+    display: flex;
+    justify-content: space-around;
+}
+
+header .menu a{
+    width: 260px;
+    background: #d86a43;
+    text-align: center;
+    padding: 14px 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 8px;
+    color: #fefcfc;
+    box-shadow: 0 0 10px -1px #000;
+}
+
+header .menu a:hover{
+    box-shadow: none;
+    background: #e44d26;
+}
+main{
+    background: #FFE2DE;
+    padding: 55px 0px;
+}
+.tech{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.tech img{
+    width: 360px;
+    height: 200px;
+}
+.tech .arrow{
+    width: 41px;
+    height: 22px;
+}
+.gallery{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.gallery img{
+    width: 360px;
+    height: 200px;
+    margin-bottom: 35px;
+}
+.news article{
+    background: white;
+    display: flex;
+    padding: 20px 25px 15px 15px;
+    margin-bottom: 40px;
+
+}
+.description{
+    padding: 20px;
+    color: blueviolet;
+}
+.news img{
+    width: 340px;
+    height: 220px;
+    margin-right: 55px;;
+}
+.news article:nth-child(even) img{
+    order:1;
+    margin-right: 0;
+    margin-left: 55px;
+
+}
+.dp{
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.hw-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.hw{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: flex-start;
+    justify-self: center;
+    justify-content: center;
+
+}
+.item{
+    height: 100px;
+    width: 100px;
+
+}
+.hw:nth-child(1) .item{
+    justify-self: start;
+    align-self: center;
+
+}
+.hw:nth-child(2) .item{
+   justify-self: center;
+}
+.hw:nth-child(3) .item{
+    align-self: center;
+    justify-self: center;
+}
