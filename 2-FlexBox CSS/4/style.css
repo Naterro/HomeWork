@@ -1,0 +1,243 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+.container{
+    max-width: 1195px;
+    margin: 0 auto;
+    /* border: 1px solid #000; */
+}
+
+header{
+    background: #6e78b7;
+    padding: 55px 0;
+}
+
+header .menu{
+    display: flex;
+
+    justify-content: space-around;
+
+
+}
+
+header .menu a{
+    margin-left: 10px;
+    width: 260px;
+    background: #d86a43;
+    text-align: center;
+    padding: 14px 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 8px;
+    color: #fefcfc;
+    box-shadow: 0 0 10px -1px #000;
+}
+
+header .menu a:hover{
+    box-shadow: none;
+    background: #e44d26;
+}
+main{
+    background: #FFE2DE;
+    padding: 55px 0px;
+}
+.tech{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.tech img{
+    width: 360px;
+    height: 200px;
+}
+.tech .arrow{
+    width: 41px;
+    height: 22px;
+}
+.gallery{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.gallery img{
+    width: 360px;
+    height: 200px;
+    margin-bottom: 35px;
+
+}
+.gallery img:nth-child(2){
+    flex-grow: 2;
+}
+.gallery img:nth-child(5){
+    flex-grow: 2;
+}
+
+.news article{
+    background: white;
+    display: flex;
+    padding: 20px 25px 15px 15px;
+    margin-bottom: 40px;
+
+}
+.description{
+    padding: 20px;
+    color: blueviolet;
+}
+.news img{
+    width: 340px;
+    height: 220px;
+    margin-right: 55px;;
+}
+.news article:nth-child(even) img{
+    order:1;
+    margin-right: 0;
+    margin-left: 55px;
+
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+}
+.cards .card{
+    width: 400px;
+    min-height: 420px;
+    background: #50bee2;
+    border-radius: 15px;
+    padding-bottom: 15px;
+    flex-direction: column;
+}
+.cards .card h3 {
+    color: white;
+    text-transform: uppercase;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin: 0;
+    background: #d86a43;
+    padding: 10px;
+    text-align: center;
+}
+.cards .card .btn{
+    width: 260px;
+    text-transform: uppercase;
+    background: #d86a43;
+    color: white;
+    margin:  auto auto;
+    border: none;
+    display: block;
+    font-size: 24px;
+    border-radius: 15px;
+    padding: 14px 0;
+    box-shadow: 0 0 10px -1px black;
+}
+footer{
+    font-size: 21px;
+    background: #22356F;
+    color: white;
+    text-align: center;
+    padding: 100px 0 100px;
+}
+.wrap{
+    width: 80%;
+}
+footer p{
+    margin: 0;
+}
+.dp{
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+.item{
+    width: 400px;
+    height: 400px;
+    background: #0052C1;
+    border: 1px solid #000;
+}
+.hw-3{
+    justify-content: space-around;
+    display: flex;
+ /*   flex-wrap: wrap;*/
+}
+.hw-3 .item:nth-child(even){
+    flex-shrink: 1;
+}
+.hw-3 .item:nth-child(odd){
+
+    flex-shrink: 3;
+}
+.hw-3 .item{
+    flex-basis: 25%;
+    height: 80px;
+    margin: 10px;
+    background: #0052C1;
+    border: 1px solid #000;
+}
+@media (max-width: 1200px) {
+    .tech{
+        display: flex;
+        flex-direction: column;
+    }
+    .tech img{
+        max-width: 620px;
+        width: 100%;
+        max-height: 310px;
+        height: auto;
+    }
+    .tech .arrow{
+        display: none;
+    }
+    .gallery img{
+        flex-grow: 1;
+        height: auto;
+    }
+    .new article .description{
+        width: 100%;
+    }
+    .news article img{
+
+    }
+}
+@media (max-width: 768px) {
+    header .menu{
+        flex-direction: column;
+        align-items: center;
+    }
+    header .menu a{
+        width: 90%;
+        margin-bottom: 10px;
+    }
+    main{
+        padding-top: 30px;
+    }
+    .gallery img{
+        flex-grow: 1;
+        height: auto;
+    }
+    .news article{
+
+
+    }
+    .description{
+        flex-shrink: 2;
+        width: 100%;
+    }
+    .news img{
+        flex-shrink: 1;
+    }
+    .news article:nth-child(even) img{
+
+
+    }
+}
