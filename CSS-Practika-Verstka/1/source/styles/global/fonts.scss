@@ -37,3 +37,10 @@
   font-weight: bold;
   font-style: normal;
 }
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  src: url("../../fonts/fontawesome-webfont.woff") format("woff"),
+  url("../../fonts/fontawesome-webfont.woff2") format("woff2");
+  font-style:normal;
+  font-weight:900;
+}

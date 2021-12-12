@@ -13,7 +13,6 @@
     "@fortawesome/fontawesome-free": "^5.15.4",
     "autoprefixer": "^10.4.0",
     "browser-sync": "^2.27.7",
-    "font-awesome": "^4.7.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-pug": "^5.0.0",
