@@ -1,0 +1,36 @@
+.header-container{
+  margin: auto;
+
+}
+.hotels{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  & .hotel{
+    width: 1fr;
+    height: 1fr;
+    border: 1px solid blue;
+  }
+  & .hotel:hover{
+      background: lighten(gray, 50%);
+
+  }
+}
+.btn-map{
+  display: inline-block;
+  border-radius: 3px;
+  background-color: green;
+  font-size: 20px;
+  width: 100px;
+  padding: 10px 22px 7px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 10px;
+  :hover{
+    background: lighten(green,20%);
+
+  }
+}

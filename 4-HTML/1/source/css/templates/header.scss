@@ -1,0 +1,14 @@
+.header{
+  margin:auto;
+  font-family: "Arial Black";
+  font-size: 24px;
+  background: #5c5c5c;
+  text-align: right;
+  & h2{
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}
+.info{
+  padding-right: 15px;
+}

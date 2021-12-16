@@ -1,0 +1,22 @@
+.navbar{
+  position: sticky;
+  background: #6e78b7;
+}
+.nav-links{
+  display: flex;
+  justify-content: center;
+  height: 50px;
+
+}
+.nav-link{
+  align-self: center;
+  margin-right: 20px;
+  text-decoration: none;
+  color: black;
+  text-transform: capitalize;
+
+  &:hover{
+/*    color: red;*/
+    border-bottom: 1px solid red;
+  }
+}
